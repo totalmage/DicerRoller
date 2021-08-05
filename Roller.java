@@ -21,7 +21,7 @@ public class Roller extends RollDice implements ActionListener{
     JButton button4;
     Random randNum = new Random();
 
-    //public void actionPerformed(ActionEvent event){}
+
     //d20
     ActionListener list20 = new ActionListener(){
         @Override
@@ -65,7 +65,8 @@ public class Roller extends RollDice implements ActionListener{
             roll = rollDice(d4);
             button4.setText("Click to roll D4: " +Integer.toString(roll));
         }
-    };    
+    };
+   
     
     public void actionPerformed(ActionEvent e){
     } 
@@ -103,8 +104,4 @@ public class Roller extends RollDice implements ActionListener{
         frame.setVisible(true);
     }
     
-    public static void main(String[] args){
-        new Roller();
-        
-    }
 }
